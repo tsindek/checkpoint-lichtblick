@@ -1,0 +1,53 @@
+/*******************************************************************************/
+/* general */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Lato, sans-serif;
+}
+
+:root {
+  --color-box-1: #f5f5f5;
+  --color-box-2: #e8a7b7;
+  --color-box-3: #9eb9ae;
+  --color-footer-box: #000000;
+}
+
+/*******************************************************************************/
+/*header*/
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.logo {
+  width: 25%;
+}
+
+.navigation {
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+}
+
+/*******************************************************************************/
