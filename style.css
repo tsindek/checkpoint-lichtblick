@@ -18,6 +18,10 @@ h5 {
   font-family: Lato, sans-serif;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 :root {
   --color-box-1: #f5f5f5;
   --color-box-2: #e8a7b7;
@@ -38,9 +42,6 @@ h5 {
   width: 25%;
 }
 
-.navigation {
-}
-
 .nav-list {
   display: flex;
   flex-direction: row;
@@ -50,4 +51,19 @@ h5 {
   font-weight: 400;
 }
 
+.mountain-pic {
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  scale: 2;
+}
+
+.intro-text-box {
+  padding: 1rem 2rem;
+  background-color: var(--color-box-1);
+}
+
+.intro-text-box p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
 /*******************************************************************************/
