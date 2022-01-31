@@ -38,6 +38,7 @@ p {
   --color-box-1: #f5f5f5;
   --color-box-2: #e8a7b7;
   --color-box-3: #9eb9ae;
+  --color-box-border: 2px solid#767676;
   --color-footer-box: #000000;
 }
 
@@ -63,18 +64,18 @@ p {
   font-weight: 400;
 }
 
-.mountain-pic {
-  max-width: 100%;
-  aspect-ratio: 16/9;
-  scale: 2;
+.img-mountain {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
 }
 
-.intro-text-box {
+.intro-text {
   padding: 1rem 2rem;
   background-color: var(--color-box-1);
 }
 
-.intro-text-box p {
+.intro-text p {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-top: 1rem;
@@ -90,11 +91,11 @@ p {
   align-items: center;
 }
 
-.info-box-h {
+.info-box__h {
   margin-bottom: 0.4rem;
 }
 
-.info-box-p {
+.info-box__p {
   margin-top: 0.4rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -108,7 +109,7 @@ p {
   font-size: 1.1rem;
 }
 
-.filler-box {
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,13 +118,32 @@ p {
   padding: 0 1rem;
 }
 
-.filler-box-h {
+.main-content__t-box {
+  text-align: center;
+}
+
+.t-box__h {
   margin-bottom: 0.4rem;
 }
 
-.filler-box-p {
+.t-box__p {
   margin-top: 0.4rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.content-box {
+  max-width: 100%;
+  border: var(--color-box-border);
+  border-radius: 8px;
+}
+
+.content-box__img {
+  position: relative;
+  left: -0.5rem;
+  top: 0.5rem;
+  z-index: -1;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
 }
 /*******************************************************************************/
