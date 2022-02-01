@@ -324,4 +324,23 @@ p {
   font-size: 0.7rem;
   text-align: center;
 }
+
+/************** media query **************/
+
+@media screen and (min-width: 920px) {
+
+ .footer__nav-list {
+     flex-direction: row;
+ }   
+
+ .footer__nav {
+     margin-bottom: 2rem;
+ }
+
+ .footer {
+     padding: 2.5rem 9rem 0 9rem;
+     height: auto;
+ }
+/*****************************************/
+
 /*******************************************************************************/
