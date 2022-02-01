@@ -105,6 +105,7 @@ p {
   font-size: 1.9rem;
   margin-bottom: 0.8rem;
 }
+/************** media query **************/
 
 @media screen and (min-width: 920px) {
   .img-mountain {
@@ -135,6 +136,8 @@ p {
   }
 }
 
+/*****************************************/
+
 .info-box {
   display: flex;
   flex-direction: column;
@@ -154,9 +157,14 @@ p {
   background-color: var(--color-box-3);
 }
 
+.info-box-text {
+  max-width: 75ch;
+}
+
 .info-box__h {
   margin-bottom: 0.4rem;
   text-align: center;
+  max-width: 40ch;
 }
 
 .info-box__p {
@@ -164,6 +172,7 @@ p {
   margin-bottom: 2rem;
   padding: 0 1rem;
   text-align: center;
+  max-width: 75ch;
 }
 
 .button {
@@ -228,6 +237,25 @@ p {
   font-weight: 500;
   text-underline-offset: 3px;
 }
+
+/************** media query **************/
+
+@media screen and (min-width: 920px) {
+  .content-box-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main-content__t-box {
+    max-width: 65ch;
+  }
+
+  .content-box {
+    max-width: 400px;
+  }
+}
+
+/*****************************************/
 
 /*******************************************************************************/
 /*footer*/
